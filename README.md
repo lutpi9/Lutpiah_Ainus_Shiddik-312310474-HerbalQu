@@ -9,6 +9,12 @@
 | *Dosen Pengampu* | Doni Maulana,  S.Kom, M.M.S.I |
 
 ## STORYBOARD
-<img width="528" alt="image" src="https://github.com/user-attachments/assets/ca1ce2ec-db19-4ea8-98ce-2d05725e2f48">
+<img width="413" alt="image" src="https://github.com/user-attachments/assets/0b035957-2150-4e11-92d1-852232db7115">
 
+## MOCK-UP
+<img width="496" alt="image" src="https://github.com/user-attachments/assets/78374113-f4ee-475b-b3d8-c515d68ab1cd">
 
+## TUJUAN MEMBUAT APLIKASI HerbalQu
+1. Menyediakan Informasi Herbal yang Akurat dan Terpercaya
+2. Meningkatkan Kesadaran akan Gaya Hidup Sehat
+   
