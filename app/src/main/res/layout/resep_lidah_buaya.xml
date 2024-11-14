@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Image at the top -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/lidah_buaya"
+        android:scaleType="centerCrop"
+        android:contentDescription="Lidah Buaya" />
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Description Text -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lidah buaya atau aloe vera memiliki banyak manfaat untuk kesehatan tubuh, di antaranya:\n\n• Menjaga kesehatan kulit: Lidah buaya dapat membantu mengatasi kulit kering, meredakan peradangan\n• Menjaga kesehatan mulut: Lidah buaya dapat membantu mengatasi plak gigi dan masalah gigi lainnya.\n• Menjaga kesehatan pencernaan: Lidah buaya dapat membantu menjaga kesehatan saluran pencernaan dan meredakan gastroesophageal reflux disease (GERD)."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Green Box with Steps -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#AFD887"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lidah buaya dapat diolah untuk meredakan asam lambung dengan cara membuat jus lidah buaya:\n\n1. Kupas dan bersihkan daging lidah buaya\n2. Campur 2 sendok makan daging lidah buaya dengan 6 gelas air\n3. Blender hingga halus dan jus lidah buaya dapat diminum langsung atau dicampur ke dalam smoothies. Untuk menambah rasa, Anda dapat menambahkan madu, lemon, atau jahe."
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Back Button at the Bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back button" />
+    </LinearLayout>
+
+</LinearLayout>

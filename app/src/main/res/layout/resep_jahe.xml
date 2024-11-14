@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Status Bar -->
+    <LinearLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:41"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/circle_black" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/circle_black" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/statusBar"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/jahe"
+        android:scaleType="centerCrop" />
+
+    <!-- Text Content -->
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginBottom="16dp"
+        android:text="Jahe memiliki banyak manfaat untuk kesehatan, di antaranya:"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- List of Benefits -->
+    <TextView
+        android:id="@+id/listBenefits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textContent"
+        android:layout_marginBottom="16dp"
+        android:text="• Meredakan nyeri: Jahe dapat meredakan nyeri haid, nyeri sendi, dan nyeri otot.\n\n• Menurunkan berat badan: Jahe dapat membantu menurunkan berat badan dengan meningkatkan metabolisme dan mempercepat pembakaran lemak.\n\n• Mengatasi gangguan pencernaan: Jahe dapat mengatasi masalah pencernaan seperti sakit perut."
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Green Box with Instructions -->
+    <LinearLayout
+        android:id="@+id/greenBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listBenefits"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#AFD887"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jahe dapat diolah untuk meredakan sakit perut. Berikut cara membuat air jahe:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Cuci dan bersihkan jahe.\n2. Iris tipis-tipis jahe.\n3. Rebus jahe dalam air mendidih selama 10–20 menit.\n4. Diamkan sejenak.\n5. Tambahkan madu, perasan jeruk nipis, atau susu untuk memperkaya

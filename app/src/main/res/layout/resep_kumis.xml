@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Image Section -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kumis_kucing"
+
+    <!-- Text Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanaman kumis kucing (Orthosiphon aristatus) memiliki banyak manfaat untuk kesehatan, di antaranya:"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <!-- List Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• Mengatasi infeksi saluran kemih (ISK): Kumis kucing dapat mengatasi infeksi saluran kemih yang disebabkan oleh bakteri seperti Escherichia coli dan Staphylococcus aureus."
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• Mengatasi masalah ginjal: Kumis kucing dapat mengatasi batu ginjal dan gangguan ginjal."
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="• Mengobati asam urat: Kandungan flavonoid dan fenolik dalam kumis kucing dapat menghambat pembentukan asam urat dan meningkatkan pengeluaran asam urat melalui urine."
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000" />
+
+    <!-- Green Box Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#AFD887"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kumis kucing memiliki banyak manfaat untuk kesehatan, di antaranya untuk mengatasi asam urat, ginjal, saluran kemih, dan lainnya. Berikut cara mengolah kumis kucing untuk berbagai keperluan:"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Air rebusan rebus 4-5 lembar daun kumis kucing dengan segelas air sampai mendidih, lalu tunggu hingga dingin. Minum air rebusan ini 3 kali sehari."
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Button Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:contentDescription="Back button" />
+    </LinearLayout>
+</LinearLayout>

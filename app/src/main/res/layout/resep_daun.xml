@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Status Bar -->
+    <LinearLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:41"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_black" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_black"
+                android:layout_marginStart="4dp" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_black"
+                android:layout_marginStart="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/status_bar"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/daun_sirih"
+        android:scaleType="centerCrop" />
+
+    <!-- Text Content -->
+    <TextView
+        android:id="@+id/text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginTop="8dp"
+        android:text="Daun sirih memiliki banyak manfaat untuk kesehatan, di antaranya:"
+        android:textSize="14sp"
+        android:textColor="#000000" />
+
+    <!-- Bullet Points -->
+    <LinearLayout
+        android:id="@+id/bullet_points"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Membantu menyembuhkan luka. Protein dalam daun sirih dapat membantu proses penyembuhan luka."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Menjaga kesehatan mulut dan gigi. Daun sirih dapat membantu mengurangi pertumbuhan bakteri yang menyebabkan gusi bengkak."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Membantu mencegah infeksi bakteri. Daun sirih memiliki sifat antibakteri yang dapat membantu melawan bakteri penyebab penyakit seperti E.coli, S.aureus, dan P.aeruginosa."
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+    </LinearLayout>
+
+    <!-- Green Box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bullet_points"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:background="#AFD887"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daun sirih dapat digunakan untuk menjaga kesehatan mulut dengan berbagai cara, seperti:"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Berkumur dengan air rebusan daun sirih. Air rebusan daun sirih dapat menghambat bakteri mulut dan zat asam yang dapat menyebabkan gigi berlubang. Caranya, cuci 2-4 lembar daun sirih segar, seduh dengan air panas, dan tutup rapat. Kemudian, gunakan untuk berkumur saat hangat."
+            android:textSize="14sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/circle_white"
+        android:src="@drawable/ic_arrow_back"
+        android:contentDescription="Back" />
+
+</RelativeLayout>
