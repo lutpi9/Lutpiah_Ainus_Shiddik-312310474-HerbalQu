@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/kumis_kucing"
+        android:src="@drawable/kumis_kucing"/>
 
     <!-- Text Section -->
     <TextView
@@ -79,10 +79,14 @@
         android:gravity="center"
         android:layout_marginTop="16dp">
 
-        <Button
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="@drawable/ic_arrow_back_black_24dp"
-            android:contentDescription="Back button" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/highlight_section"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@drawable/button_back" />
     </LinearLayout>
 </LinearLayout>

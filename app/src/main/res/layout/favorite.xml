@@ -1,8 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5">
+
 
     <!-- Header -->
     <TextView
@@ -17,6 +19,7 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+
     <!-- Image and Text -->
     <LinearLayout
         android:layout_width="wrap_content"
@@ -30,7 +33,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/jahe"
-             />
+            />
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,19 +44,15 @@
             android:textSize="16sp" />
     </LinearLayout>
 
-    <!-- Back Button -->
+    <!-- Bottom Back Button -->
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back Button"
+        android:src="@drawable/button_back" />
 
 </RelativeLayout>
-
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-<corners android:radius="8dp" />
-<solid android:color="#FFFFFF" />
-<padding android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp" />
-<stroke android:width="1dp" android:color="#DDDDDD" />
-</shape>
-
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-<solid android:color="#FFFFFF" />
-<corners android:radius="50dp" />
-<stroke android:width="1dp" android:color="#000000" />
-</shape>

@@ -31,23 +31,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center">
-
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:background="@drawable/circle_black"
-                    android:layout_marginEnd="4dp"/>
-
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:background="@drawable/circle_black"
-                    android:layout_marginEnd="4dp"/>
-
-                <View
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:background="@drawable/circle_black"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -80,15 +63,16 @@
             android:textSize="14sp"
             android:textColor="#000000"
             android:layout_below="@id/content"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="6dp"/>
 
         <!-- Highlighted Section -->
         <LinearLayout
+            android:id="@+id/highlight_section"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="#AFD887"
-            android:padding="16dp"
+            android:padding="6dp"
             android:layout_below="@id/benefits"
             android:layout_marginBottom="16dp">
 
@@ -104,4 +88,18 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. Rebus umbi ini terlebih dahulu untuk menghilangkan kandungan berbahaya dan aroma tak sedap.\n2. Blender bit terlebih dahulu hingga tekstur menjadi halus.\n3. Kemudian, tambahkan wortel ke dalam jus dan daun bayam satu per satu. Cara ini untuk semakin menghilangkan bau tanah.\n4. Agar tekstur jus tidak
+                android:text="1. Rebus umbi ini terlebih dahulu untuk menghilangkan kandungan berbahaya dan aroma tak sedap.\n2. Blender bit terlebih dahulu hingga tekstur menjadi halus.\n3. Kemudian, tambahkan wortel ke dalam jus dan daun bayam satu per satu. Cara ini untuk semakin menghilangkan bau tanah.\n4. Agar tekstur jus tidak"/>
+        </LinearLayout>
+
+        <!-- Back Button -->
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/highlight_section"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            android:src="@drawable/button_back" />
+    </RelativeLayout>
+</ScrollView>

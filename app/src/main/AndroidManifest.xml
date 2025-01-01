@@ -1,26 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    package="com.example.herbalqu">
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="HerbalQu"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HerbalQu"
-        tools:targetApi="31">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Aktivitas Loading -->
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".activity_main"
+            android:exported="true"> <!-- Tambahkan atribut ini -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Aktivitas Beranda -->
+        <activity
+            android:name=".beranda"
+            android:exported="false" /> <!-- Tidak wajib di-export jika tanpa intent-filter -->
+        <activity
+            android:name=".resep_lidah_buaya"
+            android:exported="false" /> <!-- Tidak wajib di-export jika tanpa intent-filter -->
+        <activity android:name=".resep_jahe" />
+        <activity android:name=".resep_bit" />
+        <activity android:name=".resep_bawangp" />
+        <activity android:name=".resep_daun" />
+        <activity android:name=".resep_kumis" />
+        <activity android:name=".favorite" />
+        <activity android:name=".searching" />
+
+
+
+    </application>
 </manifest>

@@ -28,23 +28,6 @@
             android:layout_gravity="end"
             android:layout_weight="1"
             android:gravity="end">
-
-            <View
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:background="@drawable/circle_black" />
-
-            <View
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:background="@drawable/circle_black"
-                android:layout_marginStart="4dp" />
-
-            <View
-                android:layout_width="10dp"
-                android:layout_height="10dp"
-                android:background="@drawable/circle_black"
-                android:layout_marginStart="4dp" />
         </LinearLayout>
     </LinearLayout>
 
@@ -112,7 +95,7 @@
         android:orientation="vertical"
         android:background="#AFD887"
         android:padding="8dp"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="8dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -132,12 +115,13 @@
 
     <!-- Back Button -->
     <ImageButton
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/circle_white"
-        android:src="@drawable/ic_arrow_back"
-        android:contentDescription="Back" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@drawable/button_back" />
 
 </RelativeLayout>
